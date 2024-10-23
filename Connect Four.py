@@ -29,13 +29,31 @@ for rules in Rules.values():
     print(rules)
 
 
-game_on = bool(input("Is the game on : 1 --> yes , 0 --> No : ")) 
+game_on = bool(int(input("Is the game on : 1 --> yes , 0 --> No : "))) 
 
-def grid_init():
-    pass
+
+def grid_init(rows,drops):
+    global initial_grid 
+    initial_grid = [["O" for d in range(drops)] for r in range(rows)]
+    return initial_grid
+
+def show_grid(recieved_grid):
+    for row in recieved_grid:
+        print(row)
+
+# Just testing the base function
+# my_grid = grid_init(3,3)
+# show_grid(my_grid)
 
 while game_on:
-    pass
+    rows,cols = map(int, input("Enter dimension of the grid 'rows cols': ").split())
+    new_grid = grid_init(rows,cols)
+    slots_filled = []
+    shape1 = input("Enter your token shape player 1: ")
+    shape2 = input("Enter your token shape player 2: ")
+    print("-------Here is the base grid--------")
+    show_grid(new_grid)
+    break
 else:
     print("No Game Energy Left")
 
