@@ -46,13 +46,21 @@ def show_grid(recieved_grid):
 # show_grid(my_grid)
 
 while game_on:
-    rows,cols = map(int, input("Enter dimension of the grid 'rows cols': ").split())
-    new_grid = grid_init(rows,cols)
+    rows,cols = map(int, input("Enter dimension option of the grid 'rows cols' -> '6 7': ").split()) # additional dimension options should be added later
+    grid = grid_init(rows,cols)
     slots_filled = []
     shape1 = input("Enter your token shape player 1: ")
     shape2 = input("Enter your token shape player 2: ")
     print("-------Here is the base grid--------")
-    show_grid(new_grid)
+    show_grid(grid)
+    round = 0
+    empty_slots = [(r,c) for r in range(rows) for c in range(cols)]
+    filled_slots = []
+    # Once all needed variables are initialized, the core game mechanic starts
+    connect_four = True
+    while  connect_four:
+        pass 
+
     break
 else:
     print("No Game Energy Left")
