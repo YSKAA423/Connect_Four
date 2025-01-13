@@ -8,24 +8,16 @@ The goal of this project is to build a terminal-based, user-interactive game of 
 
 The game also supports a flexible grid size (e.g., 6x7 by default), where players can choose their own tokens and play against each other. This project can be extended further to include a CPU opponent.
 
-### Features:
-1. A 2-player game (with a CPU opponent to be added in future versions).
-2. A dynamic, user-defined grid size (default is 6 rows and 7 columns).
+### About Connect Four:
+1. A 2-player game.
+2. A dynamic, user-defined grid size (default suggested is 6 rows and 7 columns).
 3. Players can choose their own token shapes.
 4. The game checks for 4 connected tokens in any direction to declare a winner.
 5. After a game ends, players can choose to restart or quit.
 
 ### Future Extensions:
 - Add AI for CPU opponent.
-- Allow custom grid sizes for a more diverse game experience.
 - Implement a better user interface, such as graphical representation or web version.
-
-## Rules
-
-1. A 2-player game.
-2. A dynamic grid that is decided upon by the players.
-3. Each player gets to choose their own token.
-4. The program tracks the tokens, and when 4 tokens connect in any direction, that player wins, and the game concludes. An option to restart or end is provided.
 
 ## How to Play
 
