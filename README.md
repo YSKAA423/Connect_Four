@@ -35,7 +35,7 @@ The game also supports a flexible grid size (e.g., 6x7 by default), where player
 A 2 player game
 A dynamic grid that is decided upon by the players
 Each player gets to choose their own token
-The program tracks the tokens and when 4 tokens connect in any direction then that player wins and that game concludes. (An Option to restart or to end to offered)
+The program tracks the tokens and when 4 tokens connect in any direction then that player wins and that game concludes. (An Option to restart or to end is offered)
 ---------------      Connect FOUR      ---------------
 
 Is the game on : 1 --> Yes , 0 --> No : 1
